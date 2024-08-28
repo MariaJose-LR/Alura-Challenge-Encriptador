@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <div class="encriptador-desktop">
+        <div class="main-content">
+            <div class="left-column">
+                <img src="Logo.png" alt="Logo de Alura" class="logo">
+                <textarea id="input-text" class="text-area" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="info">
+                    <img src="bi_exclamation-circle-fill.png" alt="Ícono de información">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="buttons">
+                    <button id="encrypt-btn" class="btn btn-primary">Encriptar</button>
+                    <button id="decrypt-btn" class="btn btn-secondary">Desencriptar</button>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="result-area">
+                    <div class="result-content">
+                        <img id="no-text-image" src="Muñeco.png" alt="Imagen de búsqueda">
+                        <h2 id="no-text-title">Ningún mensaje fue encontrado</h2>
+                        <p id="no-text-message">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        <textarea id="encrypted-text" readonly style="display: none;" placeholder="Resultado de la encriptación/desencriptación"></textarea>
+                    </div>
+                    <button id="copy-btn" style="display: none;">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="footer-left">Creado por María José</p>
+        <p class="footer-center">
+            <img src="Gmail-Logo.png" alt="Gmail" class="icon"> 
+            <a href="mailto:mariajoselopezrecalde.91@gmail.com">mariajoselopezrecalde.91@gmail.com</a>
+        </p>
+        <p class="footer-right">
+            <img src="GitHub-Icon.png" alt="GitHub" class="icon"> 
+            <a href="https://github.com/MariaJose-LR" target="_blank">github.com/MariaJose-LR</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
